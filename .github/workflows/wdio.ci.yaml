@@ -1,0 +1,26 @@
+name: WDIO CI
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '20'
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Start web server
+      run: yarn dev
+
+    - name: Run WebdriverIO tests
+      run: yarn wdio
