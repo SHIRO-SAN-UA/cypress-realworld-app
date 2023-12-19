@@ -23,4 +23,4 @@ jobs:
       run: yarn dev
 
     - name: Run WebdriverIO tests
-      run: yarn wdio
+      run: wdio
