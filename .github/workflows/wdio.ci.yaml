@@ -22,5 +22,14 @@ jobs:
     - name: Start web server
       run: yarn dev
 
+    - name: Wait for Server to Start
+      run: sleep 10 # Waits for 10 seconds
+
+    - name: Check if Server is Running
+      run: curl -I localhost:[3000]
+
+    - name: Show WebdriverIO Config
+      run: cat ./wdio.conf.ts
+
     - name: Run WebdriverIO tests
       run: yarn wdio
