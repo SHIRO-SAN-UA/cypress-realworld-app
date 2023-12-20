@@ -195,7 +195,14 @@
     "codesandbox:start:api": "yarn tsnode:not-instrumented --files backend/app.ts",
     "codesandbox:start": "NODE_ENV=development TSC_COMPILE_ON_ERROR=true concurrently \"vite\" yarn:start:api:codesandbox",
     "postinstall": "husky install && patch-package",
-    "wdio": "wdio run ./wdio.conf.ts"
+    "test:all": "wdio run ./wdio.conf.ts",
+    "test:single": "wdio run ./wdio.conf.ts --spec ./test/specs/auth.specs.ts",
+    "test:chrome": "wdio run ./wdio.conf.chrome.ts",
+    "test:firefox": "wdio run ./wdio.conf.firefox.ts",
+    "test:dev": "cross-env ENV=dev wdio run ./wdio.conf.ts",
+    "test:staging": "cross-env ENV=staging wdio run ./wdio.conf.ts",
+    "test:prod": "cross-env ENV=prod wdio run ./wdio.conf.ts"
+
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"

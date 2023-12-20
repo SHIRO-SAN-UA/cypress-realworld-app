@@ -16,7 +16,7 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
-    "types": ["node", "webdriverio/async", "@wdio/mocha-framework"]
+    "types": ["node", "webdriverio/async", "@wdio/mocha-framework", "mocha"]
   },
   "include": [
     "test/**/*.ts",
