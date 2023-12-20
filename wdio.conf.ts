@@ -28,6 +28,16 @@ const chromeOptions = isCI
       ],
     }
   : {};
+// Set Firefox options based on the environment
+const firefoxOptions = isCI
+  ? {
+      args: ['-headless'],
+      prefs: {
+        // additional preferences if needed
+      }
+    }
+  : {};
+
 export const config: Options.Testrunner = {
   //
   // ====================
@@ -93,15 +103,10 @@ export const config: Options.Testrunner = {
       "goog:chromeOptions": chromeOptions,
     },
     {
-      browserName: "firefox",
-      // specs: [
-      //     'test/ffOnly/*'
-      // ],
-      "moz:firefoxOptions": {
-        // flag to activate Firefox headless mode (see https://github.com/mozilla/geckodriver/blob/master/README.md#firefox-capabilities for more details about moz:firefoxOptions)
-        // args: ['-headless']
-      },
+      browserName: 'firefox',
+      'moz:firefoxOptions': firefoxOptions,
     },
+    
   ],
 
   //
