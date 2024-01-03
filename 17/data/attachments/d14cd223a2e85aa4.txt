@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test=\"sidenav-user-settings\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.109)",
+  "stacktrace": "#0 0x560f1d662f83 <unknown>\n#1 0x560f1d31bcf7 <unknown>\n#2 0x560f1d36b99e <unknown>\n#3 0x560f1d36baa1 <unknown>\n#4 0x560f1d3b6d64 <unknown>\n#5 0x560f1d3950dd <unknown>\n#6 0x560f1d3b4006 <unknown>\n#7 0x560f1d394e53 <unknown>\n#8 0x560f1d35cdd4 <unknown>\n#9 0x560f1d35e1de <unknown>\n#10 0x560f1d627531 <unknown>\n#11 0x560f1d62b455 <unknown>\n#12 0x560f1d613f55 <unknown>\n#13 0x560f1d62c0ef <unknown>\n#14 0x560f1d5f799f <unknown>\n#15 0x560f1d650008 <unknown>\n#16 0x560f1d6501d7 <unknown>\n#17 0x560f1d662124 <unknown>\n#18 0x7f0bd5094ac3 <unknown>\n"
+}
