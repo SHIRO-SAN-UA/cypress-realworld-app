@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test=\"user-onboarding-next\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.109)",
+  "stacktrace": "#0 0x56035991af83 <unknown>\n#1 0x5603595d3cf7 <unknown>\n#2 0x56035962399e <unknown>\n#3 0x560359623aa1 <unknown>\n#4 0x56035966ed64 <unknown>\n#5 0x56035964d0dd <unknown>\n#6 0x56035966c006 <unknown>\n#7 0x56035964ce53 <unknown>\n#8 0x560359614dd4 <unknown>\n#9 0x5603596161de <unknown>\n#10 0x5603598df531 <unknown>\n#11 0x5603598e3455 <unknown>\n#12 0x5603598cbf55 <unknown>\n#13 0x5603598e40ef <unknown>\n#14 0x5603598af99f <unknown>\n#15 0x560359908008 <unknown>\n#16 0x5603599081d7 <unknown>\n#17 0x56035991a124 <unknown>\n#18 0x7f454d294ac3 <unknown>\n"
+}
