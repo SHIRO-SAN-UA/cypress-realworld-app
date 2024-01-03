@@ -5579,6 +5579,18 @@
     loupe "^2.3.6"
     pretty-format "^29.5.0"
 
+"@wdio/allure-reporter@^8.27.0":
+  version "8.27.0"
+  resolved "https://registry.yarnpkg.com/@wdio/allure-reporter/-/allure-reporter-8.27.0.tgz#8399a2bd08ed52b5ab1264e83a287666519b10a5"
+  integrity sha512-TjC9rYcpUL9kFza4HqnvmLMXD12tZjtslUkrOcz4fvrn1Gw259hZYP+pUtqmPfoQPptIVk6vqvRp9nPg7gDXzw==
+  dependencies:
+    "@types/node" "^20.1.0"
+    "@wdio/reporter" "8.27.0"
+    "@wdio/types" "8.27.0"
+    allure-js-commons "^2.5.0"
+    csv-stringify "^6.0.4"
+    strip-ansi "^7.1.0"
+
 "@wdio/cli@^8.26.2":
   version "8.26.2"
   resolved "https://registry.yarnpkg.com/@wdio/cli/-/cli-8.26.2.tgz#c0b98d554b73ee6258755e6976398a86584fbce1"
@@ -5688,6 +5700,17 @@
     diff "^5.0.0"
     object-inspect "^1.12.0"
 
+"@wdio/reporter@8.27.0":
+  version "8.27.0"
+  resolved "https://registry.yarnpkg.com/@wdio/reporter/-/reporter-8.27.0.tgz#5db56b6fb4eb3b354dedeba2414fd8b8e232bd53"
+  integrity sha512-kBwsrHbsblmXfHSWlaOKXjPRPeT29WSKTUoCmzuTcCkhvbjY4TrEB0p04cpaM7uNqdIZTxHng54gZVaG/nZPiw==
+  dependencies:
+    "@types/node" "^20.1.0"
+    "@wdio/logger" "8.24.12"
+    "@wdio/types" "8.27.0"
+    diff "^5.0.0"
+    object-inspect "^1.12.0"
+
 "@wdio/runner@8.26.2":
   version "8.26.2"
   resolved "https://registry.yarnpkg.com/@wdio/runner/-/runner-8.26.2.tgz#e78c634d73195a8c8dfcb57c7bf26950c6100c77"
@@ -5720,6 +5743,13 @@
   version "8.26.2"
   resolved "https://registry.yarnpkg.com/@wdio/types/-/types-8.26.2.tgz#412bd2f7d0a783bf8c411f5adbaa8a234cd126fd"
   integrity sha512-LBaoTr4jrPu9knQBN1/7BD3SLkaGoQPcbE3GKIxeaOu0fRMOtEr22HxoONahOlQDvyPoOBmSoZw8wUvIfwhrRw==
+  dependencies:
+    "@types/node" "^20.1.0"
+
+"@wdio/types@8.27.0":
+  version "8.27.0"
+  resolved "https://registry.yarnpkg.com/@wdio/types/-/types-8.27.0.tgz#ef2e3a9ae083f08ee5fe5bf9e5dfc70cc55cebcb"
+  integrity sha512-LbP9FKh8r0uW9/dKhTIUCC1Su8PsP9TmzGKXkWt6/IMacgJiB/zW3u1CgyaLw9lG0UiQORHGoeJX9zB2HZAh4w==
   dependencies:
     "@types/node" "^20.1.0"
 
@@ -6037,6 +6067,18 @@ ajv@^8.6.2:
     json-schema-traverse "^1.0.0"
     require-from-string "^2.0.2"
     uri-js "^4.2.2"
+
+allure-commandline@^2.25.0:
+  version "2.25.0"
+  resolved "https://registry.yarnpkg.com/allure-commandline/-/allure-commandline-2.25.0.tgz#46a42b91a5fdeb70a4d2a077bed93515b1c7dd65"
+  integrity sha512-HYMQwuX/8ySTrXqgr6ZY830c6xgRbSusxVwZIBbDyNTCDb3mqK2b1ENjsD8yhl/7/8S02NZCDAwJFxt3f8qL9Q==
+
+allure-js-commons@^2.5.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/allure-js-commons/-/allure-js-commons-2.10.0.tgz#59edd18ac283bd58d848e47fc7e625342921a43a"
+  integrity sha512-DgACWBU2dchQD8tQOo5Y0MXx08SSzdgCnKBdwrOu29vITYBXih+0r8SbmrFYQhjAbn8eKMM+mXq+rKtjZRa2oA==
+  dependencies:
+    properties "^1.2.1"
 
 amazon-cognito-identity-js@6.3.1:
   version "6.3.1"
@@ -7522,6 +7564,11 @@ csstype@^3.0.2, csstype@^3.1.1:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+
+csv-stringify@^6.0.4:
+  version "6.4.5"
+  resolved "https://registry.yarnpkg.com/csv-stringify/-/csv-stringify-6.4.5.tgz#99808b40ec30b86cc0e1c7d707c1d6ecbc4e1a00"
+  integrity sha512-SPu1Vnh8U5EnzpNOi1NDBL5jU5Rx7DVHr15DNg9LXDTAbQlAVAmEbVt16wZvEW9Fu9Qt4Ji8kmeCJ2B1+4rFTQ==
 
 damerau-levenshtein@^1.0.8:
   version "1.0.8"
@@ -13104,6 +13151,11 @@ prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.6.0, prop-types@^15.6.2, 
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.13.1"
+
+properties@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/properties/-/properties-1.2.1.tgz#0ee97a7fc020b1a2a55b8659eda4aa8d869094bd"
+  integrity sha512-qYNxyMj1JeW54i/EWEFsM1cVwxJbtgPp8+0Wg9XjNaK6VE/c4oRi6PNu5p7w1mNXEIQIjV5Wwn8v8Gz82/QzdQ==
 
 property-expr@^2.0.4:
   version "2.0.5"
