@@ -55,7 +55,7 @@
     "@babel/plugin-proposal-private-property-in-object": "7.21.11",
     "@cypress/code-coverage": "^3.10.0-dev.1",
     "@cypress/instrument-cra": "1.4.0",
-    "@faker-js/faker": "6.1.2",
+    "@faker-js/faker": "^8.3.1",
     "@percy/cli": "^1.27.4",
     "@percy/cypress": "3.1.2",
     "@testing-library/jest-dom": "^5.16.5",
@@ -168,8 +168,6 @@
     "cypress:run": "cypress run",
     "cypress:run:component": "cypress run --component",
     "cypress:run:mobile": "cypress run --config '{\"e2e\":{\"viewportWidth\":375,\"viewportHeight\":667}}'",
-    "test": "yarn cypress:open",
-    "test:headless": "yarn cypress:run",
     "test:api": "yarn cypress:run --spec 'cypress/tests/api/*'",
     "test:unit": "vitest",
     "test:unit:ci": "vitest --run",
@@ -195,14 +193,14 @@
     "codesandbox:start:api": "yarn tsnode:not-instrumented --files backend/app.ts",
     "codesandbox:start": "NODE_ENV=development TSC_COMPILE_ON_ERROR=true concurrently \"vite\" yarn:start:api:codesandbox",
     "postinstall": "husky install && patch-package",
-    "test:all": "wdio run ./wdio.conf.ts",
-    "test:single": "wdio run ./wdio.conf.ts --spec ./test/specs/auth.specs.ts",
-    "test:chrome": "wdio run ./wdio.conf.chrome.ts",
-    "test:firefox": "wdio run ./wdio.conf.firefox.ts",
+    "test": "wdio run wdio.conf.ts",
+    "test:headless": "cross-env HEADLESS=true wdio wdio.conf.ts",
+    "test:chrome": "BROWSER=chrome wdio run wdio.conf.ts",
+    "test:firefox": "BROWSER=firefox wdio run wdio.conf.ts",
+    "test:firefox_headless": "cross-env HEADLESS=true BROWSER=firefox wdio run wdio.conf.ts",
     "test:dev": "cross-env ENV=dev wdio run ./wdio.conf.ts",
     "test:staging": "cross-env ENV=staging wdio run ./wdio.conf.ts",
     "test:prod": "cross-env ENV=prod wdio run ./wdio.conf.ts"
-
   },
   "engines": {
     "node": "^18.0.0 || >=20.0.0"
