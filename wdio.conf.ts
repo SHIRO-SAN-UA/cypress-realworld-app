@@ -2,41 +2,37 @@ import urls from "./data/urls";
 import type { Options } from "@wdio/types";
 import * as dotenv from "dotenv";
 
-dotenv.config(); // Automatically loads environment variables from .env file in root directory.
+dotenv.config();
 
-// Define the allowed keys for urls
 type UrlsKey = "dev" | "staging" | "prod";
-
-// Ensure env is one of the keys in urls or default to 'dev'
 const env: UrlsKey = (process.env.ENV as UrlsKey) || "dev";
-
-// Debugging: log the URL to be used
 console.log(`Environment: ${env}, URL: ${urls[env]}`);
 
-// Determine if running in a CI environment
 const isCI = process.env.CI === "true";
+const browserName = process.env.BROWSER || 'chrome';
+const headLess = process.env.HEADLESS === 'true';
 
-// Set Chrome options based on the environment
-const chromeOptions = isCI
-  ? {
-      args: [
-        "--headless",
-        "--disable-gpu",
-        "--window-size=1920,1080",
-        "--no-sandbox",
-        "--disable-dev-shm-usage",
-      ],
-    }
-  : {};
-// Set Firefox options based on the environment
-const firefoxOptions = isCI
-  ? {
-      args: ['-headless'],
-      prefs: {
-        // additional preferences if needed
-      }
-    }
-  : {};
+let capabilities: any[];
+
+if (browserName === 'firefox') {
+    capabilities = [{
+        browserName: 'firefox',
+        'moz:firefoxOptions': headLess || isCI ? {
+            args: ['-headless'],
+            prefs: {
+                // additional preferences
+            }
+        } : {}
+    }];
+} else {  // default to Chrome
+    capabilities = [{
+        browserName: 'chrome',
+        acceptInsecureCerts: true,
+        'goog:chromeOptions': headLess || isCI ? {
+            args: ['--headless', '--disable-gpu', '--window-size=1920,1080', '--no-sandbox', '--disable-dev-shm-usage']
+        } : {}
+    }];
+}
 
 export const config: Options.Testrunner = {
   //
@@ -69,7 +65,7 @@ export const config: Options.Testrunner = {
   // then the current working directory is where your `package.json` resides, so `wdio`
   // will be called from there.
   //
-  specs: ["./test/specs/**/*.ts"],
+  specs: ["./test/specs/*.ts"],
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'
@@ -90,24 +86,13 @@ export const config: Options.Testrunner = {
   // and 30 processes will get spawned. The property handles how many capabilities
   // from the same test should run tests.
   //
-  maxInstances: 10,
+  maxInstances: 2,
   //
   // If you have trouble getting all important capabilities together, check out the
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
-  capabilities: [
-    {
-      browserName: "chrome",
-      acceptInsecureCerts: true,
-      "goog:chromeOptions": chromeOptions,
-    },
-    {
-      browserName: 'firefox',
-      'moz:firefoxOptions': firefoxOptions,
-    },
-    
-  ],
+  capabilities: capabilities,
 
   //
   // ===================

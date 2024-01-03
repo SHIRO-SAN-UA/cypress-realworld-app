@@ -18,8 +18,21 @@ class LoginPage extends Page {
     }
 
     public get btnSubmit () {
-        return $('.MuiButton-label');
+        return $('[data-test="signin-submit"]');
     }
+
+    public get usernameError () {
+        return $('#username-helper-text');
+    }
+
+    public get passwordError () {
+        return $('#password-helper-text')
+    }
+
+    public get userOrPasswordError () {
+        return $('[class="MuiAlert-message"]');
+    }
+
 
     /**
      * a method to encapsule automation code to interact with the page
@@ -28,6 +41,12 @@ class LoginPage extends Page {
     public async login (username: string, password: string) {
         await this.inputUsername.setValue(username);
         await this.inputPassword.setValue(password);
+        await this.btnSubmit.click();
+    }
+
+    public async loginValid () {
+        await this.inputUsername.setValue('Katharina_Bernier');
+        await this.inputPassword.setValue('s3cret');
         await this.btnSubmit.click();
     }
 

@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 168137,
+      "balance": 166037,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 101805,
+      "balance": 103905,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -74,6 +74,17 @@
       "balance": 75369,
       "createdAt": "2020-02-11T21:26:46.510Z",
       "modifiedAt": "2020-05-21T15:15:33.944Z"
+    },
+    {
+      "id": "T-gm_cEG0",
+      "uuid": "73ec4ae2-c204-4210-a366-c7f74dca4527",
+      "firstName": "Mekhi",
+      "lastName": "Corkery-Nitzsche",
+      "username": "Sophia70",
+      "password": "$2a$10$93mbRH3cXw4hRScQQ0oaw.4U2J1wFyMIi7xs133W3L/I8KYmUridW",
+      "balance": 0,
+      "createdAt": "2024-01-03T12:56:26.185Z",
+      "modifiedAt": "2024-01-03T12:56:26.185Z"
     }
   ],
   "contacts": [
@@ -206,7 +217,7 @@
       "bankName": "O'Hara - Labadie Bank",
       "accountNumber": "6123387981",
       "routingNumber": "851823229",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2020-05-09T07:57:26.947Z",
       "modifiedAt": "2020-05-21T22:18:50.916Z"
     },
@@ -253,6 +264,28 @@
       "isDeleted": false,
       "createdAt": "2019-09-30T14:20:07.043Z",
       "modifiedAt": "2020-05-21T22:40:28.910Z"
+    },
+    {
+      "id": "CT4wQ9B4m",
+      "uuid": "411ced68-86b8-4d0b-9ab3-17df477a62c9",
+      "userId": "t45AiwidW",
+      "bankName": "5XQ)K",
+      "accountNumber": "338481845",
+      "routingNumber": "410412783",
+      "isDeleted": false,
+      "createdAt": "2024-01-03T12:56:23.770Z",
+      "modifiedAt": "2024-01-03T12:56:23.770Z"
+    },
+    {
+      "id": "tVxlZ5Wib",
+      "uuid": "27e094a8-b111-4f19-811d-843dd38e96a7",
+      "userId": "T-gm_cEG0",
+      "bankName": "dn'yG",
+      "accountNumber": "853065603",
+      "routingNumber": "527749505",
+      "isDeleted": false,
+      "createdAt": "2024-01-03T12:56:28.084Z",
+      "modifiedAt": "2024-01-03T12:56:28.084Z"
     }
   ],
   "transactions": [
@@ -9855,6 +9888,67 @@
       "requestResolvedAt": "",
       "createdAt": "2019-06-27T22:24:04.794Z",
       "modifiedAt": "2020-05-21T04:58:44.494Z"
+    },
+    {
+      "id": "yEM9AMVOx",
+      "uuid": "34fd9566-a9fa-43fb-8057-88b43777b390",
+      "amount": 800,
+      "description": "Cernuus antiquus conatus acies creta pecco aspernatur atrocitas.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-03T12:56:57.212Z",
+      "modifiedAt": "2024-01-03T12:56:57.212Z"
+    },
+    {
+      "id": "FpASe8Jnk",
+      "uuid": "2a04c759-54a5-48bb-a8e9-d642ec670676",
+      "amount": 100,
+      "description": "Trans ipsa tabella consectetur paens.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-03T12:57:00.714Z",
+      "modifiedAt": "2024-01-03T12:57:00.714Z"
+    },
+    {
+      "id": "-bP5vHRJS",
+      "uuid": "6ca2e31f-789d-4e64-866d-9657f7b052b5",
+      "amount": 400,
+      "description": "Similique adipisci vergo comptus decet advoco acer vilitas adficio sordeo.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-03T12:57:04.709Z",
+      "modifiedAt": "2024-01-03T12:57:04.709Z"
+    },
+    {
+      "id": "tluSdGSig",
+      "uuid": "54e8b763-2d2a-4c67-99fe-3356e43705a4",
+      "amount": 800,
+      "description": "Tabgo defetiscor architecto vaco.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-03T12:57:06.325Z",
+      "modifiedAt": "2024-01-03T12:57:06.325Z"
+    },
+    {
+      "id": "aIiBDjsRQ",
+      "uuid": "b179dde4-56ef-4715-950f-6c111822c817",
+      "amount": 1000,
+      "description": "Utilis vesica adnuo sollicito adnuo abutor blanditiis ubi victus.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2024-01-03T12:57:10.139Z",
+      "modifiedAt": "2024-01-03T12:57:10.139Z"
     }
   ],
   "likes": [
@@ -10431,6 +10525,56 @@
       "isRead": false,
       "createdAt": "2019-10-19T20:50:49.292Z",
       "modifiedAt": "2020-05-21T21:00:50.192Z"
+    },
+    {
+      "id": "zYZgwXvjVq",
+      "uuid": "67282356-e6ca-46d5-ae98-9d29b7fa7eb8",
+      "userId": "qywYp6hS0U",
+      "transactionId": "yEM9AMVOx",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-03T12:56:57.231Z",
+      "modifiedAt": "2024-01-03T12:56:57.231Z"
+    },
+    {
+      "id": "kr7Pfm3CXe",
+      "uuid": "520dd0ee-6c8d-46b4-bd2d-42078b9752a8",
+      "userId": "qywYp6hS0U",
+      "transactionId": "FpASe8Jnk",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-03T12:57:00.743Z",
+      "modifiedAt": "2024-01-03T12:57:00.743Z"
+    },
+    {
+      "id": "7MjcEMxtkx",
+      "uuid": "a9b4d0df-9185-49ea-970f-22bf42b7a9ac",
+      "userId": "qywYp6hS0U",
+      "transactionId": "-bP5vHRJS",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-03T12:57:04.733Z",
+      "modifiedAt": "2024-01-03T12:57:04.733Z"
+    },
+    {
+      "id": "Y3Y0y43UXQ",
+      "uuid": "67cb3b8c-0858-45a7-b468-4a7e623b8318",
+      "userId": "qywYp6hS0U",
+      "transactionId": "tluSdGSig",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-03T12:57:06.343Z",
+      "modifiedAt": "2024-01-03T12:57:06.343Z"
+    },
+    {
+      "id": "oh7Gpk1uum",
+      "uuid": "9300339c-891d-4347-b1b4-8f2035ed08e3",
+      "userId": "qywYp6hS0U",
+      "transactionId": "aIiBDjsRQ",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2024-01-03T12:57:10.144Z",
+      "modifiedAt": "2024-01-03T12:57:10.144Z"
     }
   ],
   "banktransfers": [
