@@ -131,7 +131,6 @@ describe("Transactions", () => {
     let expectedNote = randomNoteNew;
     let transactionDetailsText = await homePage.transactionDetails.getText();
     expect(transactionDetailsText).toContain(`Paid $${expectedAmount} for ${expectedNote}`);
-    
   });
 
   it("should allow making new payment request", async () => {
@@ -181,13 +180,61 @@ describe("Transactions", () => {
     }
 
     // Set transaction amount and note
-    
+
     await homePage.transactionAmount.click();
     await homePage.transactionAmount.clearValue();
-    expect(await homePage.transactionAmountHelper).toHaveText('Please enter a valid amount');
+    expect(await homePage.transactionAmountHelper).toHaveText("Please enter a valid amount");
     await homePage.transactionNote.click();
     await homePage.transactionNote.clearValue();
-    expect(await homePage.transactionNoteHelper).toHaveText('Please enter a note');
-    
+    expect(await homePage.transactionNoteHelper).toHaveText("Please enter a note");
+  });
+
+  it("should display Transactions list", async () => {
+    // Navigate to Home
+    await homePage.homeButton.click();
+    expect(await homePage.transactionsList).toBeDisplayed();
+  });
+
+  it("should display Transaction detail", async () => {
+    // Navigate to Home
+    await homePage.homeButton.click();
+
+    // Select a transaction
+    let transactionItems = await $$('[data-test^="transaction-item-"]');
+    if (transactionItems.length > 0) {
+      let firstTransactionItem = transactionItems[0];
+      await firstTransactionItem.click(); // Select the first transaction in the list
+    } else {
+      throw new Error("No user items found in the list");
+    }
+    expect(await homePage.transactionDetails).toBeDisplayed();
+    expect(await homePage.transactionDetails).toHaveText("Transaction Detail");
+  });
+
+  it("should display Transactions list", async () => {
+    // Navigate to Home
+    await homePage.homeButton.click();
+    expect(await homePage.transactionsList).toBeDisplayed();
+  });
+
+  it("should allow to comment Transaction", async () => {
+    // Navigate to Home
+    await homePage.homeButton.click();
+
+    // Select a transaction
+    let transactionItems = await $$('[data-test^="transaction-item-"]');
+    if (transactionItems.length > 0) {
+      let firstTransactionItem = transactionItems[0];
+      await firstTransactionItem.click(); // Select the first transaction in the list
+    } else {
+      throw new Error("No user items found in the list");
+    }
+    let randomComment = faker.word.adjective();
+    let transactionCommentField = await $$('[data-test^="transaction-comment-input-"]');
+    let transactionCommentInput = transactionCommentField[0];
+    await transactionCommentInput.setValue(randomComment);
+    await browser.keys('Enter');
+    expect(await homePage.transactionComments).toBeDisplayed();
+
   });
 });

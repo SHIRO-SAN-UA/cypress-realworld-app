@@ -53,6 +53,10 @@ class HomePage extends Page {
 
     // Sidebar Menu selectors
 
+    public get homeButton () {
+        return $('[data-test="sidenav-home"]')
+    }
+
     public get myAccountButton () {
         return $('[data-test="sidenav-user-settings"]');
     }
@@ -111,6 +115,14 @@ class HomePage extends Page {
 
     public get makeAnotherTransaction () {
         return $('[data-test="new-transaction-create-another-transaction"]');
+    }
+
+    public get transactionDetailsHeader () {
+        return $('[data-test="transaction-detail-header"]');
+    }
+
+    public get transactionComments () {
+        return $('[data-test="comments-list"]');
     }
 }
 
