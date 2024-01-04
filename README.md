@@ -32,9 +32,10 @@ Cypress dependencies were removed for educational purposes.
 ### Structure
 
 -   `wdio.conf.ts` WDIO config file.
--   `../test` WDIO framework folder
--   `../test/pageobjects` - forder with pageobjects
--   `../test/specs` - forder with tests
+-   `../test` WDIO framework folder.
+-   `../test/pageobjects` - forder with pageobjects.
+-   `../test/specs` - forder with tests.
+-   `../data/urls.ts` - use to set environment related baseUrl.
 
 
 ### Standards
