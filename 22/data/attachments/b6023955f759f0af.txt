@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test=\"sidenav-bankaccounts\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.109)",
+  "stacktrace": "#0 0x5579f8131f83 <unknown>\n#1 0x5579f7deacf7 <unknown>\n#2 0x5579f7e3a99e <unknown>\n#3 0x5579f7e3aaa1 <unknown>\n#4 0x5579f7e85d64 <unknown>\n#5 0x5579f7e640dd <unknown>\n#6 0x5579f7e83006 <unknown>\n#7 0x5579f7e63e53 <unknown>\n#8 0x5579f7e2bdd4 <unknown>\n#9 0x5579f7e2d1de <unknown>\n#10 0x5579f80f6531 <unknown>\n#11 0x5579f80fa455 <unknown>\n#12 0x5579f80e2f55 <unknown>\n#13 0x5579f80fb0ef <unknown>\n#14 0x5579f80c699f <unknown>\n#15 0x5579f811f008 <unknown>\n#16 0x5579f811f1d7 <unknown>\n#17 0x5579f8131124 <unknown>\n#18 0x7f46ff494ac3 <unknown>\n"
+}
