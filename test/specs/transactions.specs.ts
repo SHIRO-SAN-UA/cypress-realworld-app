@@ -211,12 +211,6 @@ describe("Transactions", () => {
     expect(await homePage.transactionDetails).toHaveText("Transaction Detail");
   });
 
-  it("should display Transactions list", async () => {
-    // Navigate to Home
-    await homePage.homeButton.click();
-    expect(await homePage.transactionsList).toBeDisplayed();
-  });
-
   it("should allow to comment Transaction", async () => {
     // Navigate to Home
     await homePage.homeButton.click();

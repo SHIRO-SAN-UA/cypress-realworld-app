@@ -58,10 +58,18 @@ class MyAccountPage extends Page {
 
     // Clear all fields
     public async clearAllFields() {
-        await this.inputFirstName.clearValue();
-        await this.inputLastName.clearValue();
-        await this.inputEmail.clearValue();
-        await this.inputPhone.clearValue();
+        await this.inputFirstName.click();
+        await browser.keys(["Control", "a"]); // Or 'Meta' for Command on Mac
+        await browser.keys("Delete");
+        await this.inputLastName.click();
+        await browser.keys(["Control", "a"]); // Or 'Meta' for Command on Mac
+        await browser.keys("Delete");
+        await this.inputEmail.click();
+        await browser.keys(["Control", "a"]); // Or 'Meta' for Command on Mac
+        await browser.keys("Delete");
+        await this.inputPhone.click();
+        await browser.keys(["Control", "a"]); // Or 'Meta' for Command on Mac
+        await browser.keys("Delete");
         
     }
 

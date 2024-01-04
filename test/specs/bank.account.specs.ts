@@ -61,9 +61,9 @@ describe("Managing Bank accounts", () => {
   it("Should display helper messages, when creating new Bank Account", async () => {
     await browser.url(`${browser.options.baseUrl}bankaccounts`);
     await bankAccountsPage.createButton.click();
-    await bankAccountsPage.bankNameField.clearValue();
-    await bankAccountsPage.bankRoutingNumberField.clearValue();
-    await bankAccountsPage.accountNumberField.clearValue();
+    await bankAccountsPage.bankNameField.click();
+    await bankAccountsPage.bankRoutingNumberField.click();
+    await bankAccountsPage.accountNumberField.click();
     await body.click();
 
     await expect(bankAccountsPage.bankNameHelper).toHaveText("Enter a bank name");
