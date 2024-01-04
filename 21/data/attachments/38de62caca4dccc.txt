@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[id=\"transaction-create-description-input-helper-text\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.109)",
+  "stacktrace": "#0 0x55de10420f83 <unknown>\n#1 0x55de100d9cf7 <unknown>\n#2 0x55de1012999e <unknown>\n#3 0x55de10129aa1 <unknown>\n#4 0x55de10174d64 <unknown>\n#5 0x55de101530dd <unknown>\n#6 0x55de10172006 <unknown>\n#7 0x55de10152e53 <unknown>\n#8 0x55de1011add4 <unknown>\n#9 0x55de1011c1de <unknown>\n#10 0x55de103e5531 <unknown>\n#11 0x55de103e9455 <unknown>\n#12 0x55de103d1f55 <unknown>\n#13 0x55de103ea0ef <unknown>\n#14 0x55de103b599f <unknown>\n#15 0x55de1040e008 <unknown>\n#16 0x55de1040e1d7 <unknown>\n#17 0x55de10420124 <unknown>\n#18 0x7ffaf0e94ac3 <unknown>\n"
+}

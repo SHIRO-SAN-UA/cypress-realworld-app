@@ -1,0 +1,4 @@
+{
+  "script": "return (() => {\n            document.querySelectorAll(\"input\").forEach((input) => {\n                input.setAttribute(\"autocomplete\", \"off\");\n            });\n        }).apply(null, arguments)",
+  "args": []
+}
