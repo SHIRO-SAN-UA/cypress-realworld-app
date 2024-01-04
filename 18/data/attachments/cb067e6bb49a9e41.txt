@@ -1,0 +1,4 @@
+{
+  "using": "css selector",
+  "value": "[id=\"user-settings-email-input-helper-text\"]"
+}

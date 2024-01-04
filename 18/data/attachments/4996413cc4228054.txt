@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test=\"nav-top-new-transaction\"]\"}\n  (Session info: chrome-headless-shell=120.0.6099.109)",
+  "stacktrace": "#0 0x55cf9dd15f83 <unknown>\n#1 0x55cf9d9cecf7 <unknown>\n#2 0x55cf9da1e99e <unknown>\n#3 0x55cf9da1eaa1 <unknown>\n#4 0x55cf9da69d64 <unknown>\n#5 0x55cf9da480dd <unknown>\n#6 0x55cf9da67006 <unknown>\n#7 0x55cf9da47e53 <unknown>\n#8 0x55cf9da0fdd4 <unknown>\n#9 0x55cf9da111de <unknown>\n#10 0x55cf9dcda531 <unknown>\n#11 0x55cf9dcde455 <unknown>\n#12 0x55cf9dcc6f55 <unknown>\n#13 0x55cf9dcdf0ef <unknown>\n#14 0x55cf9dcaa99f <unknown>\n#15 0x55cf9dd03008 <unknown>\n#16 0x55cf9dd031d7 <unknown>\n#17 0x55cf9dd15124 <unknown>\n#18 0x7ff97fc94ac3 <unknown>\n"
+}
