@@ -37,11 +37,9 @@ describe("Managing Bank accounts", () => {
 
   it("Should allow to delete an existing Bank Account", async () => {
     await browser.url(`${browser.options.baseUrl}bankaccounts`);
-    await expect(bankAccountsPage.accountListFirstItem).toBeDisplayed();
+    expect(await bankAccountsPage.accountListFirstItem).toBeDisplayed();
 
-    const deleteButtons = await $$(
-      '[data-test^="bankaccount-list-item-"] [data-test="bankaccount-delete"]'
-    );
+    const deleteButtons = await $$('[data-test^="bankaccount-list-item-"] [data-test="bankaccount-delete"]');
     if (deleteButtons.length > 0) {
       await deleteButtons[0].click();
 
@@ -49,9 +47,7 @@ describe("Managing Bank accounts", () => {
       await browser.pause(1000);
 
       // Check for the '(Deleted)' text in the first item
-      const firstItemText = await $$(
-        '[data-test^="bankaccount-list-item-"] p.MuiTypography-body1'
-      )[0].getText();
+      const firstItemText = await $$('[data-test^="bankaccount-list-item-"] p.MuiTypography-body1')[0].getText();
       expect(firstItemText).toContain("(Deleted)");
     } else {
       throw new Error("No delete buttons found");
@@ -66,13 +62,9 @@ describe("Managing Bank accounts", () => {
     await bankAccountsPage.accountNumberField.click();
     await body.click();
 
-    await expect(bankAccountsPage.bankNameHelper).toHaveText("Enter a bank name");
-    await expect(bankAccountsPage.routingNumberHelper).toHaveText(
-      "Enter a valid bank routing number"
-    );
-    await expect(bankAccountsPage.accountNumberHelper).toHaveText(
-      "Enter a valid bank account number"
-    );
+    expect(await bankAccountsPage.bankNameHelper).toHaveText("Enter a bank name");
+    expect(await bankAccountsPage.routingNumberHelper).toHaveText("Enter a valid bank routing number");
+    expect(await bankAccountsPage.accountNumberHelper).toHaveText("Enter a valid bank account number");
 
     // Log out
     await homePage.logoutButton.click();

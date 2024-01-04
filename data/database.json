@@ -11,7 +11,7 @@
       "phoneNumber": "625-316-9882",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/t45AiwidW.svg",
       "defaultPrivacyLevel": "public",
-      "balance": 165437,
+      "balance": 162937,
       "createdAt": "2019-08-27T23:47:05.637Z",
       "modifiedAt": "2020-05-21T11:02:22.857Z"
     },
@@ -26,7 +26,7 @@
       "phoneNumber": "537-041-4355",
       "avatar": "https://cypress-realworld-app-svgs.s3.amazonaws.com/qywYp6hS0U.svg",
       "defaultPrivacyLevel": "private",
-      "balance": 104505,
+      "balance": 107005,
       "createdAt": "2019-09-09T13:48:45.489Z",
       "modifiedAt": "2020-05-21T02:34:01.483Z"
     },
@@ -85,6 +85,17 @@
       "balance": 0,
       "createdAt": "2024-01-04T08:40:09.655Z",
       "modifiedAt": "2024-01-04T08:40:09.655Z"
+    },
+    {
+      "id": "f-dMhSntD",
+      "uuid": "1fe3e98a-f217-487a-8376-9ce4be1fa793",
+      "firstName": "Camryn",
+      "lastName": "Volkman",
+      "username": "Chandler_Gislason58",
+      "password": "$2a$10$ZxTmegFW5PyjQYW1TFprF.1CD8Ho45I5FCO73qmZn19JdA2rao0Fq",
+      "balance": 0,
+      "createdAt": "2024-01-04T09:37:45.584Z",
+      "modifiedAt": "2024-01-04T09:37:45.584Z"
     }
   ],
   "contacts": [
@@ -305,9 +316,31 @@
       "bankName": "N[,A}",
       "accountNumber": "268464213",
       "routingNumber": "521923873",
-      "isDeleted": false,
+      "isDeleted": true,
       "createdAt": "2024-01-04T08:50:57.327Z",
       "modifiedAt": "2024-01-04T08:50:57.327Z"
+    },
+    {
+      "id": "DjcneLxDC",
+      "uuid": "36acfb94-d93e-478f-a514-c01fff982dce",
+      "userId": "t45AiwidW",
+      "bankName": "^>J:l",
+      "accountNumber": "578105560",
+      "routingNumber": "544464417",
+      "isDeleted": false,
+      "createdAt": "2024-01-04T09:37:41.151Z",
+      "modifiedAt": "2024-01-04T09:37:41.151Z"
+    },
+    {
+      "id": "mGRg7mw8d",
+      "uuid": "ffa032be-9d89-48ad-b61d-808770566466",
+      "userId": "f-dMhSntD",
+      "bankName": "wX2]a",
+      "accountNumber": "195464100",
+      "routingNumber": "151578239",
+      "isDeleted": false,
+      "createdAt": "2024-01-04T09:37:48.966Z",
+      "modifiedAt": "2024-01-04T09:37:48.966Z"
     }
   ],
   "transactions": [
@@ -9971,6 +10004,67 @@
       "requestStatus": "pending",
       "createdAt": "2024-01-04T08:41:02.038Z",
       "modifiedAt": "2024-01-04T08:41:02.038Z"
+    },
+    {
+      "id": "OTSy4TIQu",
+      "uuid": "e60ab14d-906c-48d4-981b-feb6ff54d66b",
+      "amount": 400,
+      "description": "Laborum arguo molestiae laborum via carbo vomica adsuesco.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-04T09:38:20.810Z",
+      "modifiedAt": "2024-01-04T09:38:20.810Z"
+    },
+    {
+      "id": "ueA-Zp75n",
+      "uuid": "a86a1892-b00f-43b5-abb9-a2293e05d795",
+      "amount": 800,
+      "description": "Vorax xiphias textor demens supellex deputo bibo.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-04T09:38:24.335Z",
+      "modifiedAt": "2024-01-04T09:38:24.335Z"
+    },
+    {
+      "id": "iVY92icQm",
+      "uuid": "34b144e7-682b-4e7e-8c39-8279d0ec84c0",
+      "amount": 500,
+      "description": "Colo solitudo cultellus triumphus nostrum vomer ea velociter attero.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-04T09:38:28.438Z",
+      "modifiedAt": "2024-01-04T09:38:28.438Z"
+    },
+    {
+      "id": "KUT6tgVYb",
+      "uuid": "fe05a96d-575a-47f0-80ac-e23ee0d72c8e",
+      "amount": 800,
+      "description": "Cupressus quaerat cruentus cura nam.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "complete",
+      "createdAt": "2024-01-04T09:38:29.417Z",
+      "modifiedAt": "2024-01-04T09:38:29.417Z"
+    },
+    {
+      "id": "i0P9Tm2kk",
+      "uuid": "f1e52fce-bca7-48fe-847d-1716ee4c4b26",
+      "amount": 700,
+      "description": "Ater ullam accedo.",
+      "receiverId": "qywYp6hS0U",
+      "senderId": "t45AiwidW",
+      "privacyLevel": "public",
+      "status": "pending",
+      "requestStatus": "pending",
+      "createdAt": "2024-01-04T09:38:32.516Z",
+      "modifiedAt": "2024-01-04T09:38:32.516Z"
     }
   ],
   "likes": [
@@ -10154,6 +10248,15 @@
       "transactionId": "l70IB-AAO",
       "createdAt": "2024-01-04T08:41:13.041Z",
       "modifiedAt": "2024-01-04T08:41:13.041Z"
+    },
+    {
+      "id": "u-V-FuErK",
+      "uuid": "f25e7ff0-2392-447a-bc4c-b5f4cddaa266",
+      "content": "apprehensive",
+      "userId": "t45AiwidW",
+      "transactionId": "i0P9Tm2kk",
+      "createdAt": "2024-01-04T09:38:43.695Z",
+      "modifiedAt": "2024-01-04T09:38:43.695Z"
     }
   ],
   "notifications": [
@@ -10626,6 +10729,76 @@
       "isRead": false,
       "createdAt": "2024-01-04T08:41:13.058Z",
       "modifiedAt": "2024-01-04T08:41:13.058Z"
+    },
+    {
+      "id": "-lVjZCTt4O",
+      "uuid": "18968bf7-6839-4e4f-b4b7-f8a652752cf5",
+      "userId": "qywYp6hS0U",
+      "transactionId": "OTSy4TIQu",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:20.833Z",
+      "modifiedAt": "2024-01-04T09:38:20.833Z"
+    },
+    {
+      "id": "s0zLAAz8JU",
+      "uuid": "d5edb8e0-306e-451d-bada-ffde891ad32b",
+      "userId": "qywYp6hS0U",
+      "transactionId": "ueA-Zp75n",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:24.354Z",
+      "modifiedAt": "2024-01-04T09:38:24.354Z"
+    },
+    {
+      "id": "UM9kCIqMXT",
+      "uuid": "fc955927-a022-40ff-8f8c-14393ba06f46",
+      "userId": "qywYp6hS0U",
+      "transactionId": "iVY92icQm",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:28.457Z",
+      "modifiedAt": "2024-01-04T09:38:28.457Z"
+    },
+    {
+      "id": "LzHhv0ibZ7",
+      "uuid": "d3138587-3699-4176-a055-d8071bfacbfa",
+      "userId": "qywYp6hS0U",
+      "transactionId": "KUT6tgVYb",
+      "status": "received",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:29.452Z",
+      "modifiedAt": "2024-01-04T09:38:29.452Z"
+    },
+    {
+      "id": "QP3HrzBmUz",
+      "uuid": "25d2861b-098b-46a1-afce-5748cfbe7b2a",
+      "userId": "qywYp6hS0U",
+      "transactionId": "i0P9Tm2kk",
+      "status": "requested",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:32.523Z",
+      "modifiedAt": "2024-01-04T09:38:32.523Z"
+    },
+    {
+      "id": "QCtY18Zgkp",
+      "uuid": "8d450d9e-ba89-4351-bd7d-62473238cf90",
+      "userId": "t45AiwidW",
+      "transactionId": "i0P9Tm2kk",
+      "commentId": "u-V-FuErK",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:43.699Z",
+      "modifiedAt": "2024-01-04T09:38:43.699Z"
+    },
+    {
+      "id": "8kBm7uv3o2",
+      "uuid": "ace386a1-219a-4acb-b79c-e9422eb654a7",
+      "userId": "qywYp6hS0U",
+      "transactionId": "i0P9Tm2kk",
+      "commentId": "u-V-FuErK",
+      "isRead": false,
+      "createdAt": "2024-01-04T09:38:43.707Z",
+      "modifiedAt": "2024-01-04T09:38:43.707Z"
     }
   ],
   "banktransfers": [

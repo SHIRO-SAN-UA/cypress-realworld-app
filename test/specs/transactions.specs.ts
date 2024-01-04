@@ -227,8 +227,7 @@ describe("Transactions", () => {
     let transactionCommentField = await $$('[data-test^="transaction-comment-input-"]');
     let transactionCommentInput = transactionCommentField[0];
     await transactionCommentInput.setValue(randomComment);
-    await browser.keys('Enter');
+    await browser.keys("Enter");
     expect(await homePage.transactionComments).toBeDisplayed();
-
   });
 });

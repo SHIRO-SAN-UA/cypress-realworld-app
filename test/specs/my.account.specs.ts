@@ -16,15 +16,15 @@ describe("My Account page tests", () => {
     await homePage.myAccountButton.click();
 
     await myAccountPage.clearAllFields();
-    await expect(myAccountPage.firstNameHelper).toBeDisplayed();
-    await expect(myAccountPage.firstNameHelper).toHaveText("Enter a first name");
-    await expect(myAccountPage.lastNameHelper).toBeDisplayed();
-    await expect(myAccountPage.lastNameHelper).toHaveText("Enter a last name");
-    await expect(myAccountPage.emailHelper).toBeDisplayed();
-    await expect(myAccountPage.emailHelper).toHaveText("Enter an email address");
-    await expect(myAccountPage.phoneHelper).toBeDisplayed();
-    await expect(myAccountPage.phoneHelper).toHaveText("Enter a phone number");
-    await expect(myAccountPage.saveButton).toBeDisabled();
+    expect(await myAccountPage.firstNameHelper).toBeDisplayed();
+    expect(await myAccountPage.firstNameHelper).toHaveText("Enter a first name");
+    expect(await myAccountPage.lastNameHelper).toBeDisplayed();
+    expect(await myAccountPage.lastNameHelper).toHaveText("Enter a last name");
+    expect(await myAccountPage.emailHelper).toBeDisplayed();
+    expect(await myAccountPage.emailHelper).toHaveText("Enter an email address");
+    expect(await myAccountPage.phoneHelper).toBeDisplayed();
+    expect(await myAccountPage.phoneHelper).toHaveText("Enter a phone number");
+    expect(await myAccountPage.saveButton).toBeDisabled();
   });
 
   it("should display My Account input error messages", async () => {
@@ -34,13 +34,13 @@ describe("My Account page tests", () => {
     // Type in invalid email and get error message
     await myAccountPage.clearAllFields();
     await (await myAccountPage.inputEmail).setValue(invalidEmail);
-    await expect(myAccountPage.emailHelper).toBeDisplayed();
-    await expect(myAccountPage.emailHelper).toHaveText("Must contain a valid email address");
+    expect(await myAccountPage.emailHelper).toBeDisplayed();
+    expect(await myAccountPage.emailHelper).toHaveText("Must contain a valid email address");
     // Type in invalid phone and get error message
     await myAccountPage.clearAllFields();
     await myAccountPage.inputPhone.setValue(invalidPhone);
-    await expect(myAccountPage.phoneHelper).toBeDisplayed();
-    await expect(myAccountPage.phoneHelper).toHaveText("Phone number is not valid");
-    await expect(myAccountPage.saveButton).toBeDisabled();
+    expect(await myAccountPage.phoneHelper).toBeDisplayed();
+    expect(await myAccountPage.phoneHelper).toHaveText("Phone number is not valid");
+    expect(await myAccountPage.saveButton).toBeDisabled();
   });
 });
